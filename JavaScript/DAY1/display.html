@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Data</title>
+</head>
+<body>
+
+  <h2>User Details</h2>
+  <p><strong>First Name:</strong> <span id="fname"></span></p>
+  <p><strong>Last Name:</strong> <span id="lname"></span></p>
+  <p><strong>Phone:</strong> <span id="phone"></span></p>
+  <p><strong>Email id:</strong> <span id="email"></span></p>
+  <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+
+  <script>
+    const storedData = JSON.parse(localStorage.getItem("obj"));
+
+    if (storedData) {
+      document.getElementById("fname").textContent = storedData.firstname;
+      document.getElementById("lname").textContent = storedData.lastname;
+      document.getElementById("phone").textContent = storedData.phone
+      document.getElementById("email").textContent = storedData.email;
+      document.getElementById("dob").textContent = storedData.dob;
+    } else {
+      document.body.innerHTML = "<p>No data found. Please fill the form first.</p>";
+    }
+  </script>
+
+</body>
+</html>

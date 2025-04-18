@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2 - Task</title>
+    <script src="./vendor.js"></script>
+    <link rel="stylesheet" href="./vendor.css"/>
+</head>
+<body>
+    <div id = "vendorform">
+        <h2>Fill in the product details</h2>
+        <div class = "vendorblock">
+        
+
+            <label for="vendor id">Vendor ID:</label>
+            <input type="number" name="vendors[0][id]" placeholder="Enter the ventor ID" />
+            <br>
+
+            <label for="vendor name">Vendor Name:</label>
+            <input type="text" name="vendors[0][name]" placeholder="Enter the name of the vendor" />
+            <br>
+
+            <table id="productsTable">
+                <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                </tr>
+                </thead>
+                <tbody id="productsBody">
+                <tr>
+                    <td><input type="text" name="products[0][id]" required></td>
+                    <td><input type="text" name="products[0][name]" required></td>
+                    <td><input type="number" name="products[0][price]" required></td>
+                    <td><button id="removeRow" type="button" onclick="removeRow(this)">Remove</button></td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <button id="addRow" type="button" onclick="addProductRow()">Add Product</button><br><br>
+            <label for="vendor Rating">Vendor Rating (on a scale of 1-5, 5 being the highest!):</label>
+            <input type="number" name="vendors[0][rating]" placeholder="Enter the rating for the vendor" />
+            <br>
+        </div>
+        <button id ="addVendor" type="button" onclick="addVendor()">Add Another Vendor</button>
+        <button id="submit" onclick="submitVendor()">Submit</button>
+    </div>
+
+    <div id="errMsg">
+        <h3 id="emsg"></h3>
+    </div>
+
+</body>
+</html>

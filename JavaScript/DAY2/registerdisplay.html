@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Data</title>
+  <link rel="stylesheet" href="./registerform.css"/>
+  <script src="./registerform.js"></script>
+</head>
+<body>
+    <div id="dashboard">
+  <h2 id="dashboardHeading"> DASHBOARD</h2>
+  <p><strong>Name:</strong> <span id="name"></span></p>
+  <p><strong>Role:</strong> <span id="role"></span></p>
+  <p><strong>Age:</strong> <span id="age"></span></p>
+  <p><strong>Phone:</strong> <span id="phone"></span></p>
+  <p><strong>Email id:</strong> <span id="email"></span></p>
+  <p><strong>Salary:</strong> <span id="salary"></span></p>
+</div>
+
+  <script>
+    const storedData = JSON.parse(localStorage.getItem("userDetails"));
+
+    if (storedData) {
+      document.getElementById("name").textContent = storedData.name;
+      document.getElementById("role").textContent = storedData.role;
+      document.getElementById("age").textContent = storedData.age;
+      document.getElementById("phone").textContent = storedData.phone
+      document.getElementById("email").textContent = storedData.email;
+      document.getElementById("salary").textContent = storedData.salary;
+    } else {
+      document.body.innerHTML = "<p>No data found. Please fill the form first.</p>";
+    }
+  </script>
+
+</body>
+</html>

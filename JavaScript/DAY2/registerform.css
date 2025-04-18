@@ -1,0 +1,56 @@
+input {
+    margin-bottom: 25px;
+    width: 220px;
+    height: 25px;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+label{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    font-weight: bold;
+
+}
+
+#submit {
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px;
+}
+
+#myform {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#errMsg {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+#emsg {
+    font-size: large;
+    font-weight: bold;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#dashboard {
+    border: 2px solid black;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+#dashboardHeading {
+    font-weight: bold;
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 70px;
+}

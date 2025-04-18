@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnclick() {
+            alert('btn is clicked')
+        }
+    </script>
+</head>
+<body>
+    <!--setTimeout(method, time in ms)-->
+    <button onclick="meow = setTimeout(btnclick, 3000)"> Timeout </button>
+    <button onclick="clearTimeout(meow)">Stop</button>  
+</body>
+</html>

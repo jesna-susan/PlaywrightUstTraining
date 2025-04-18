@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY2 - Task</title>
+    <script src="./registerform.js"></script>
+    <link rel="stylesheet" href="./registerform.css"/>
+</head>
+<body>
+<div id="myform">
+    <h2>Please fill the following form to register the user</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <br/>
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Enter your age" />
+    <br/>
+    <label for="role">Role:</label>
+    <input type="text" id="role" placeholder="Enter your role" />
+    <br/>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" placeholder="Enter your salary" />
+    <br/>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" placeholder="Enter your contact number" />
+    <br/>
+    <label for="email">Email id:</label>
+    <input type="email" id="email" placeholder="Enter your email id" />
+    <br/>
+    <button id="submit" onclick="submitRegister()">Submit</button>
+</div>
+    <div id="errMsg">
+        <h3 id="emsg"></h3>
+    </div>
+</body>
+</html>
