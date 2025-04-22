@@ -1,4 +1,4 @@
-function sum(...numbers: number[]): number {
+function sum1(...numbers: number[]): number {
     // return numbers.reduce((total, num) => total + num, 0); // take 2 param data, accept
     //processes an array and reduces it to a single value by applying a function to each element of the array, accumulating the result.
     let total = 0;
@@ -8,5 +8,5 @@ function sum(...numbers: number[]): number {
     return total;
 }
 
-const res = sum(1,2,3);
-console.log(res);
+const res1 = sum1(1,2,3);
+console.log(res1);
