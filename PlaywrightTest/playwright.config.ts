@@ -13,6 +13,8 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  //testIgnore: '*test-example',
+  //testMatch: '*test-example/*.spec.ts',
   // timeout: 10000,
   /*expect: {
     timeout: 100
